@@ -1,0 +1,131 @@
+index.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page de Profil de Maxime">
+    <title>Profil de Maxime</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="Top">
+        <h1>Profil de Maxime</h1>
+    </div>
+
+    <main>
+        <div id="card-Introduction" class="card">
+            <h2>Bonjour, je suis Maxime</h2>
+            <img src="Images/profile.png" alt="Ma photo" class="responsive-img">
+            <p>Je vis à Marseille, et je suis étudiant en 3e année de Bachelor à Kedge.</p>
+        </div>
+
+        <div id="card-Education" class="card">
+            <h2>Mes Diplômes</h2>
+            <p>Actuellement en dernière année à KEDGE Business School.</p>
+        </div>
+
+        <div id="card-Projects" class="card">
+            <h2>Mes Projets</h2>
+            <ul>
+                <li>Création d'une entreprise de nettoyage et entretient de pierres tombales</li>
+            </ul>
+        </div>
+
+        <div id="social-media" class="card">
+            <h2>Mes Réseaux Sociaux</h2>
+            <a href="www.linkedin.com/in/maxime-barkat-727185222" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/maxime.bkt/" target="_blank">Instagram</a>
+        </div>
+    </main>
+
+</body>
+</html>
+
+CSS : 
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #2b2d42; /* Darker text color */
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+#Top {
+    background-color: #8d99ae; /* Grayish blue */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.card {
+    background-color: #ffffff; /* White background for cards */
+    margin: 40px auto;
+    padding: 25px;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card h2 {
+    color: #d50032; /* Strong red color for headers */
+}
+
+.card p, .card ul {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.card ul {
+    padding: 0;
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 12px;
+    padding-left: 12px;
+    position: relative;
+}
+
+.card ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ef233c; /* Bright red */
+}
+
+.responsive-img {
+    width: 285px;
+    height: 285px;
+    margin: 20px auto;
+    display: block;
+    border: 6px solid #edf2f4;
+}
+
+footer {
+    background-color: #2b2d42;
+    color: #f0f8ff;
+    text-align: center;
+    padding: 25px 0;
+}
